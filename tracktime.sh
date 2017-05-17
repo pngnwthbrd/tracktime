@@ -4,7 +4,7 @@ SECONDS=0
 
 starttime=$(date)
 comment=$1
-dir=~/work/timetracking/
+dir=~/path/to/timetracking/directory/
 filename=`date +%Y-%m-%d`'.txt'
 
 echo "Press Ctrl + d to stop time tracking"
