@@ -7,14 +7,14 @@ comment=$1
 dir=~/path/to/timetracking/directory/
 filename=`date +%Y-%m-%d`'.txt'
 
-echo "Press Ctrl + d to stop time tracking"
+echo "Press any key to stop time tracking"
 
 if [ ! -f $dir''$filename ]
     then
         touch $dir''$filename
 fi
 
-time read
+time read -sN 1
 
 cat <<EOF >> $dir''$filename
 Comment:        $comment
